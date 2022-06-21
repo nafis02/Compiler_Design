@@ -12,7 +12,15 @@ int main()
     {
         if(arr[i]=='+'||arr[i]=='-'||arr[i]=='*'||arr[i]=='/'||arr[i]=='=')
         {
-            cout<<"' "<<arr[i]<<" '"<<" is an Operator\n";
+            cout<<"' "<<arr[i]<<" '"<<" is an Operator.\n\n";
+        }
+    }
+
+    for(int i=0; i<arr.size(); i++)
+    {
+        if(isalpha(arr[i]))
+        {
+            cout<<"' "<<arr[i]<<" '"<<" is a Character.\n\n";
         }
     }
 
@@ -20,7 +28,9 @@ int main()
     {
         if(isdigit(arr[i]))
         {
-            cout<<"' "<<arr[i]<<" '"<<" is a Constant Number\n";
+            cout<<"' "<<arr[i]<<" '"<<" is a Constant Number.\n\n";
         }
     }
+
+
 }
